@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Digital Clock</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="container-inner-top">
+          <div class="section-top-left">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <div class="section-top-middle">
+            <div id="hour">00</div> 
+            <span class="dots">:</span>
+            <div id="minute">00</div>
+          </div>
+          <div class="section-top-right">
+            <div id="ampm">??</div>
+            <div id="second">00</div>
+          </div>
+        </section>
+        <section class="container-inner-bottom">
+          <div class="bottom">
+            <h5 class="title">TEMPERATURE</h5>
+            <div class="section-bottom">
+              <h6 id="temperature">00</h6>
+              <div class="section-bottom-box">
+                <span><sup>o</sup>F</span>
+                <span id="temperatureFloat">.0</span>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <h5 class="title">DATE</h5>
+            <div class="section-bottom">
+              <div class="section-times">
+                <div id="date">00</div>
+                <span class="strip">-</span>
+                <div id="monthNumber">00</div>
+              </div>
+              <div class="section-bottom-box">
+                <span id="month">???</span>
+                <span id="year">0000</span>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <h5 class="title">HUMIDITY</h5>
+            <div class="section-bottom humidity">
+              <span id="humidity">00</span>%
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

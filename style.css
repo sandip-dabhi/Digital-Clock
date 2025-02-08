@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  background: #9AA6B2;
+  
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #D9EAFD;
+  border: 1px solid #9ca3af;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.container > * + * {
+  border-top: 1px solid #9ca3af;
+}
+
+.container-inner-top {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5rem;
+  padding-block: 1rem;
+}
+
+.section-top-left {
+  font-size: 1rem;
+}
+
+.section-top-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hour,
+#minute {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+#second, #temperatureFloat, #year {
+  margin-bottom: 0.5rem;
+}
+
+.dots, .strip {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.section-top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-inner-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 0.375fr);
+  column-gap: 2rem;
+}
+.container-inner-bottom > * + * {
+  border-left: 1px solid #9ca3af;
+}
+
+.bottom {
+  text-align: center;
+  padding: 0.5rem;
+}
+.bottom > * + * {
+  margin-top: 0.5rem;
+}
+
+.title {
+  color: #1f2937;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+#temperature,
+#date,
+#monthNumber {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.section-times {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-bottom {
+  display: flex;
+  justify-content: center;
+}
+.section-bottom.humidity {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.section-bottom-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+  .container {
+    writing-mode: vertical-rl;
+  }
+
+  .container > * + * {
+    border-top: none;
+    border-right: 1px solid #9ca3af;
+  }
+
+  .container-inner-bottom > * + * {
+    border-top: 1px solid #9ca3af;
+    border-left: none;
+  }
+}
